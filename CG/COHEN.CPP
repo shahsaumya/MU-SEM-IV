@@ -1,8 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
 #include<math.h>
-#include<graphics.h>
-#include<dos.h>
 typedef struct coordinate
 {
 	int x,y;
@@ -19,7 +16,7 @@ void main()
 	int gd=DETECT,gm;
 	int x1,y1;
 	int v;
-	initgraph(&gd,&gm,"");
+	initgraph(&gd,&gm,NULL);
 	printf("Enter x and y coordinate of line 1\n");
 	scanf("%d %d",&x1,&y1);
 	p1.x=x1;
