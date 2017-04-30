@@ -1,5 +1,4 @@
 #include<graphics.h>>
-#include<conio.h>
 #include<stdio.h>
 void main()
 {
@@ -8,7 +7,7 @@ void main()
 	float b[3][3],p1[] = {50,50,100,50,100,100,50,100,50,50};
 	int pi;
 	int res[3][3];
-	initgraph(&gd,&gm,"");
+	initgraph(&gd,&gm,NULL);
 	xmax = getmaxx();
 	ymax = getmaxy();
 	xmid = xmax/2;
@@ -45,6 +44,5 @@ void main()
 	{
 		line(xmid+pi[i],ymid-pi[i+1],xmid+pi[i+2],ymid-pi[i+3]);
 	}
-	getch();
 	closegraph();
 }
